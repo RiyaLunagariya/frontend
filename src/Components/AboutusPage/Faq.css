@@ -1,0 +1,60 @@
+.faqs{
+  padding: 5% 0;
+}
+.faq-section {
+  background: url("../../Images/Image\ \(3\).png");
+  background-color: #FFF7F1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 5% 4%;
+}
+
+.faq-button {
+  background-color: #ff8c42;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.faq-section-title  {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #1D1D18;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion-button {
+  background-color: #f9f9f9 !important;
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffefd5 !important;
+  box-shadow: none;
+}
+.product-image {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: -45%;
+}
+
+.product-image-container {
+  position: relative;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

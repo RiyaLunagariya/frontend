@@ -1,0 +1,56 @@
+.nature-section {
+  background-image: url("../../Images/clock-remember-medication-time\ 1.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 60px;
+  padding: 220px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin: 4%;
+}
+.nature-content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+}
+.nature-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #234d8b;
+  margin-bottom: 40px;
+}
+.nature-subtitle {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.shop-now-btn {
+  background-color: #234d8b;
+  color: #fff;
+  padding: 13px 23px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 40%;
+}
+.shop-now-btn:hover {
+  background-color: #155ab6;
+}
+
+@media (max-width: 768px) {
+  .nature-section {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .nature-content {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,172 @@
+.footer-content {
+  background: #234d8b;
+  color: #ffffff;
+  padding: 3% 6% 1.5%;
+  margin-top: 5%;
+}
+
+.footer img {
+  width: 88%;
+  margin-bottom: 10px;
+  margin-left: -13%;
+}
+
+.footer .about p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.footer .email {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.footer .email input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  outline: none;
+}
+
+.footer .email button {
+  background: #7698CF;
+  color: white;
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.footer .email button:hover {
+  background-color: #285a9e;
+}
+button{
+  display: flex;
+  align-items: center;
+}
+button img{
+  height: 20px;
+  width: 20px !important;
+}
+
+.footer .privacy {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer .privacy input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.links{
+  margin-left: 30%;
+}
+.footer .links h4 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.footer .links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .links ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.footer .links ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.social{
+  margin-left: 30%;
+  width: 100%;
+  font-size: 18px;
+}
+.social i{
+ font-size: 25px;
+}
+.footer .social h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.social p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer .social-icons i {
+  width: 40px;
+  height: 40px;
+  background-color: #7698CF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.copy .text{
+  text-align: right;
+}
+hr {
+  border: none;
+  border-top: 1px solid #285a9e;
+  margin: 20px 0;
+}
+.footer-content .row p {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .footer-content .row p {
+    margin-bottom: 10px;
+  }
+  .footer .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  .links, .social{
+    margin-left: 0%;
+  }
+  .copy .text{
+    text-align: left;
+  }
+  .footer .email button {
+    padding: 7px 13px;
+  }
+  .copy {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .footer-content .row p {
+    margin-top: 0;
+    font-size: 15px;
+  }
+}

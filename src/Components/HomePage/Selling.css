@@ -1,0 +1,153 @@
+.best-selling-container {
+  padding: 2%;
+  position: relative;
+}
+
+.selling-title {
+  text-align: left;
+  width: 35%;
+  font-size: 30px;
+  margin-left: 3%;
+  color: #7698CF;
+  font-weight: bold;
+  background: #7698CF14;
+  margin-bottom: 40px;
+  padding: 7px 2px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.ul{
+  text-decoration: 1px underline #023350;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 4px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-row {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.chevron {
+  background: none;
+  border: none;
+  font-size: 80px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.chevron-left {
+  position: absolute;
+  left: 0;
+}
+
+.chevron-right {
+  position: absolute;
+  right: 0;
+}
+
+.Selling-col {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 10px;
+}
+
+.Selling-card {
+  width: 100%;
+  max-width: 25rem;
+  margin: 15px auto;
+  border: 0.77px solid #E4E4E4;
+  border-radius: 0px !important;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Selling-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.Selling-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.Selling-subtitle {
+  color: #234D8B;
+  text-decoration: 1px underline #234D8B;
+  text-underline-offset: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.Selling-price-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 10px 0px;
+  padding: 5px 0px;
+  background: #D0E2FF;
+}
+
+.Selling-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #023350;
+}
+
+.Selling-original-price {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #234D8B;
+}
+
+.Selling-discount {
+  color: #ff0004;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.Selling-rating {
+  font-size: 17px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+  background: #234D8B;
+  width: 100%;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #023350;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #7698CF;
+}

@@ -1,0 +1,101 @@
+.wellness-journey-container {
+  padding: 50px 5%;
+}
+
+.left-section{
+  padding-right: 15%;
+}
+
+.w-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #234D8B;
+}
+
+.w-subtitle {
+  font-size: 18px;
+  margin-bottom: 22%;
+  padding-right: 45%;
+  color: #222222;
+}
+.Wellness-image {
+  width: 100%;
+  border-radius: 8px;
+}
+.w-img{
+  width: 23% !important;
+}
+.Wellness-card {
+  background-color: #EFF5FF;
+  border: none;
+  position: relative;
+  padding: 20px;
+  width: 70%;
+}
+
+.Wellness-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #747474;
+  margin-bottom: 5px;
+}
+
+.Wellness-subtitle {
+  font-size: 1rem;
+  color: #222222;
+  width: 35%;
+  margin-bottom: 5px;
+}
+
+.Wellness-description {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #747474;
+  width: 70%;
+}
+
+.Wellness-price-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 0
+}
+
+.Wellness-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.Wellness-original-price {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: #B1B1B1;
+}
+
+.Wellness-discount {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #008000;
+}
+
+.view-details-btn {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #234D8B;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.view-details-btn:hover {
+  color: #002752;
+}
+
+.forimmune{
+  width: 100%;
+}

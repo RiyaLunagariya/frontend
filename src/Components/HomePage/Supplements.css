@@ -1,0 +1,12 @@
+.Supplements-section{
+    background-image: url("../../Images/Main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 5%;
+    margin: 0 5%;
+}
+.Supplements-pills{
+    margin-left: 75%;
+    margin-top: 6.5%;
+    width: 25%;
+}

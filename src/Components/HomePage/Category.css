@@ -1,0 +1,64 @@
+/* Section styles */
+.categories-section {
+  padding: 20px;
+}
+.section-header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.view-all-btn {
+  display: flex;
+  position: absolute;
+  padding-left: 90%;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #234d8b;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.view-all-btn:hover {
+  color: #003d80;
+}
+.chevron-icon-view {
+  margin-left: 5px;
+  font-size: 18px;
+}
+.title {
+  color: #234d8b;
+  font-weight: 700;
+  font-size: 45px;
+}
+.category-col {
+  margin-bottom: 20px;
+}
+.category-card {
+  margin: 10px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.card-image-container {
+  position: relative;
+}
+
+.card-image-container img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.category-name-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 27px;
+  font-weight: bold;
+  border-radius: 0 0 8px 8px;
+}

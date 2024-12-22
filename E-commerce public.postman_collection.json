@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "5d8cecaa-dec1-4f12-b4ca-512dedfcbb9c",
+		"name": "E-commerce public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37297523"
+	},
+	"item": [
+		{
+			"name": "get public seo by page url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/seo/collection",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"seo",
+						"collection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all slider",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/sliders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"sliders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all public collections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/collections",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"collections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get collection by title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/collections/Immunity Booster Tablet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"collections",
+						"Immunity Booster Tablet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all public product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/products/Immunity Booster Tablet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"products",
+						"Immunity Booster Tablet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product by collection id ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/products/collection/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"products",
+						"collection",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Review by Product Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/reviews/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"reviews",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create review by product id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productId\": 1,        // Replace with the actual product ID\r\n  \"userId\": 2,           // Replace with the actual user ID\r\n  \"rating\": 5,           // Rating between 1 and 5\r\n  \"reviewText\": \"This product is amazing!\",\r\n  \"imageUrl\": \"http://example.com/image.jpg\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/public/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

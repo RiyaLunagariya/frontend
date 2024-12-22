@@ -1,0 +1,48 @@
+.hero-section {
+    background-image: url('../../Images/BANNER.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .text-left{
+    padding: 13% 10%;
+    text-align: left;
+  }
+
+  .img{
+    width: 60%;
+  }
+  
+  .hero-section h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #234D8B;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #023350;
+
+  }
+  
+  .hero-button {
+    background: #234D8B;
+    justify-content: center;
+    box-shadow: 0px 0px 34.42px 4.3px #0000000D;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .arrow-icon {
+    font-size: 17px;
+  }
+  

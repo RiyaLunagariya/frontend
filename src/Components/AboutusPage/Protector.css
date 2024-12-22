@@ -1,0 +1,28 @@
+.about-section {
+  padding: 0px 2%;
+}
+
+.section-title-p {
+  text-align: left;
+  width: 30%;
+  font-size: 2rem;
+  color: #023350;
+  font-weight: bold;
+  background: #7698CF14;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-bottom: 40px;
+  padding: 5px 2px;
+}
+
+.center{
+  align-items: center;
+}
+
+.about-text {
+  align-items: center;
+  font-size: 30px;
+  color: #8c8c8c;
+  line-height: 50px;
+  margin-bottom: 30px;
+}

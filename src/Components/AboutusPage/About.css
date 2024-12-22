@@ -1,0 +1,43 @@
+.about {
+  padding: 8% 2% 0% 2%;
+}
+.header-section {
+  padding: 0% 7% 4% 5%;
+  text-align: left;
+  background: url("../../Images/aboutbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-text h1 span{
+  color: #234D8B;
+  font-size: 60px;
+
+}
+.header-text h1 {
+  font-weight: 700;
+ color: #7698CF;
+ font-size: 60px;
+}
+
+.header-text p {
+  color: #023350;
+  font-size: 20px;
+  padding: 6px 0px 0px;
+}
+.info{
+  color: #33333380;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.header-button {
+  background: #234D8B;
+  color: white;
+  border: none;
+  padding: 15px 80px;
+  font-size: 20px;
+}
+
+.header-button:hover {
+  background-color: #0056b3;
+}
