@@ -1,12 +1,47 @@
-.Supplements-section{
-    background-image: url("../../Images/Main.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0 0 5%;
-    margin: 0 5%;
+.Supplements-section {
+  background-image: url("../../Images/supplementbg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  display: flex;
+  margin: 5%;
+  align-items: center;
 }
-.Supplements-pills{
-    margin-left: 75%;
-    margin-top: 6.5%;
-    width: 25%;
+.Supplements-img {
+  margin-top: -9% !important;
+  width: 100%;
+}
+.Supplements-content {
+  text-align: center;
+  color: #234d8b;
+}
+.Supplements-sub{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.Supplements-title{
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.view-more-btn {
+  background: #234d8b;
+  justify-content: center;
+  box-shadow: 0px 0px 34.42px 4.3px #0000000d;
+  border-radius: 50px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  margin-left: 23%;
+}
+
+.view-more-btn:hover {
+  background-color: #0056b3;
+}
+.Supplements-pills {
+  margin-left: 10%;
+  width: 25%;
 }

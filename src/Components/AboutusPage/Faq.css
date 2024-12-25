@@ -42,14 +42,14 @@
   background-color: #ffefd5 !important;
   box-shadow: none;
 }
-.product-image {
+.faq-product-image {
   position: absolute;
   height: auto;
   width: 100%;
   top: -45%;
 }
 
-.product-image-container {
+.faq-product-image-container {
   position: relative;
   width: 100%;
   position: sticky;

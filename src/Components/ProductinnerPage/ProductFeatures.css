@@ -1,0 +1,49 @@
+  /* Product Features Section */
+  .product-features {
+    background-image: url('../../Images/—Pngtree—white\ pill\ pharmaceutical\ medical\ tablets_15957162\ \(1\)\ 1.png');
+    background-color: #BAD4FF;
+    padding: 100px 20px;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .product-features .feature {
+    text-align: center;
+  }
+  
+  .product-features .feature h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #023350;
+    margin-top: 30px;
+  }
+  
+  .f-bg img{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .product-features .f-bg {
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+  @media (max-width: 768px) {
+    .product-features .feature h3 {
+      font-size: 16px;
+    }
+  
+    .product-features .feature::before {
+      width: 50px;
+      height: 50px;
+    }
+  }

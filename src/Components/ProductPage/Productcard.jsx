@@ -1,12 +1,19 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
+import { useCart } from "../CartPage/CartContext";  // Cart context for adding to cart
 import './ProductCard.css';
 
-const ProductCard = ({ image, title, price, discountPrice, reviews, rating }) => {
+const ProductCard = ({ id, image, title, price, discountPrice, reviews, rating }) => {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart({ id, image, title, price, discountPrice, reviews, rating });
+  };
+
   return (
     <Card className="product-card">
       <Card.Img variant="top" src={image} className="product-image-immune" />
-      <Card.Body className='product'>
+      <Card.Body className="product">
         <Card.Title className="product-title">{title}</Card.Title>
         <Card.Subtitle className="product-subtitle">FOR: MEN</Card.Subtitle>
         <div className="product-pricing">
@@ -17,7 +24,7 @@ const ProductCard = ({ image, title, price, discountPrice, reviews, rating }) =>
         <div className="product-rating">
           ⭐ {rating}/5 <span className="reviews">({reviews} Reviews)</span>
         </div>
-        <Button className="add-to-cart-btn" variant="primary">Add To Cart</Button>
+        <Button className="pro-add-to-cart-btn" variant="primary" onClick={handleAddToCart}>Add To Cart</Button>
       </Card.Body>
     </Card>
   );

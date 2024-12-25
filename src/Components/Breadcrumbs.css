@@ -1,0 +1,24 @@
+/* Breadcrumbs.css */
+.breadcrumbs ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .breadcrumbs li {
+    margin-right: 10px;
+  }
+  
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs span {
+    color: #555;
+  }
+  

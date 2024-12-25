@@ -1,0 +1,50 @@
+.product-review-form{
+    padding: 0 5%;
+}
+.r-name{
+    background-color: #7698CF14;
+    width: 30%;
+    color: #023350;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.r-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 2%;
+}
+.label{
+    font-size: 20px;
+    font-weight: 700;
+}
+.select{
+    font-size: 25px;
+}
+
+/* Style all input fields, textarea, and select dropdown */
+.product-review-form input,
+.product-review-form textarea,
+.product-review-form select {
+    background: #FFFFFF01;
+    box-shadow: 0px 0px 8.52px 0px #00000014;
+    border: none;
+}
+
+
+.product-review-form input::placeholder,
+.product-review-form textarea::placeholder,
+.product-review-form input[type="text"]::placeholder,
+.product-review-form input[type="email"]::placeholder {
+  color: #CACACA;
+  font-weight: 700;
+}
+
+.submit{
+    box-shadow: 0px 0px 29.93px 3.74px #0000000D;
+    background-color: #234D8B;
+    width: 10%;
+    padding: 10px 20px;
+}

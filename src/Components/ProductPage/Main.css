@@ -7,20 +7,21 @@
     padding-top: 8%;
     overflow-x: hidden;
 }
-.main-content{
+.pro-main-content{
     color: #fff;
     position: absolute;
     padding-left: 5%;
     padding-top: 2%;
     font-size: 20px;
 }
-.main-content h1{
+.pro-main-content h1{
     font-size: 60px;
+    color: #ffffff;
 }
-.main-image{
+.pro-main-image{
     padding-left: 2%;
 }
-.main-image img{
+.pro-main-image img{
     width: 98%;
 }
 .selling{

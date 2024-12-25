@@ -7,17 +7,80 @@
 	},
 	"item": [
 		{
-			"name": "get public seo by page url",
+			"name": "create consumer",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"Jinal\", \"email\":\"jinal@gmail.com\",\"password\":\"jinal@123\",\"role\":\"consumer\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:4000/api/public/seo/collection",
+					"raw": "http://localhost:4000/api/users/register",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Consumer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"jinal@gmail.com\",\"password\":\"jinal@123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/public/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get public seo by page url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://immune.volterratiles.com.au/api/public/seo/collection",
+					"protocol": "https",
+					"host": [
+						"immune",
+						"volterratiles",
+						"com",
+						"au"
+					],
 					"path": [
 						"api",
 						"public",
@@ -34,12 +97,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/api/public/sliders",
-					"protocol": "http",
+					"raw": "https://immune.volterratiles.com.au/api/public/sliders",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"immune",
+						"volterratiles",
+						"com",
+						"au"
 					],
-					"port": "4000",
 					"path": [
 						"api",
 						"public",
@@ -55,12 +120,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/api/public/collections",
-					"protocol": "http",
+					"raw": "https://immune.volterratiles.com.au/api/public/collections",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"immune",
+						"volterratiles",
+						"com",
+						"au"
 					],
-					"port": "4000",
 					"path": [
 						"api",
 						"public",
@@ -76,17 +143,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/api/public/collections/Immunity Booster Tablet",
-					"protocol": "http",
+					"raw": "https://immune.volterratiles.com.au/api/public/collections/capsul",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"immune",
+						"volterratiles",
+						"com",
+						"au"
 					],
-					"port": "4000",
 					"path": [
 						"api",
 						"public",
 						"collections",
-						"Immunity Booster Tablet"
+						"capsul"
 					]
 				}
 			},
@@ -98,12 +167,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/api/public/products",
-					"protocol": "http",
+					"raw": "https://immune.volterratiles.com.au/api/public/products",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"immune",
+						"volterratiles",
+						"com",
+						"au"
 					],
-					"port": "4000",
 					"path": [
 						"api",
 						"public",
@@ -119,12 +190,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/api/public/products/Immunity Booster Tablet",
-					"protocol": "http",
+					"raw": "https://immune.volterratiles.com.au/api/public/products/Immunity Booster Tablet",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"immune",
+						"volterratiles",
+						"com",
+						"au"
 					],
-					"port": "4000",
 					"path": [
 						"api",
 						"public",
@@ -141,12 +214,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/api/public/products/collection/2",
-					"protocol": "http",
+					"raw": "https://immune.volterratiles.com.au/api/public/products/collection/2",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"immune",
+						"volterratiles",
+						"com",
+						"au"
 					],
-					"port": "4000",
 					"path": [
 						"api",
 						"public",
@@ -185,12 +260,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/api/public/reviews/product/1",
-					"protocol": "http",
+					"raw": "https://immune.volterratiles.com.au/api/public/reviews/product/1",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"immune",
+						"volterratiles",
+						"com",
+						"au"
 					],
-					"port": "4000",
 					"path": [
 						"api",
 						"public",
@@ -217,7 +294,30 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/api/public/reviews",
+					"raw": "https://immune.volterratiles.com.au/api/public/reviews",
+					"protocol": "https",
+					"host": [
+						"immune",
+						"volterratiles",
+						"com",
+						"au"
+					],
+					"path": [
+						"api",
+						"public",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get public seo by collection name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/seo/collection/Capsul",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -226,7 +326,248 @@
 					"path": [
 						"api",
 						"public",
-						"reviews"
+						"seo",
+						"collection",
+						"Capsul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get public seo by product name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/public/seo/product/Immunity%20Booster%20Tablet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"seo",
+						"product",
+						"Immunity%20Booster%20Tablet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create public shipping-address",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImNvbnN1bWVyIiwiaWF0IjoxNzM0MzI4NDQwLCJleHAiOjE3MzQzMzIwNDB9.NiXUd2y99JSTTjbKUlIvLBjTNIJDcrGcn2_F79DeTMM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"addressLine1\": \"123 Main St\",\r\n    \"addressLine2\": \"Apt 4B\",\r\n    \"city\": \"Anytown\",\r\n    \"state\": \"CA\",\r\n    \"zipCode\": \"12345\",\r\n    \"country\": \"USA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/public/shipping-addresses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"shipping-addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get public shipping-addresses by consumer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImNvbnN1bWVyIiwiaWF0IjoxNzM0MzI4NDQwLCJleHAiOjE3MzQzMzIwNDB9.NiXUd2y99JSTTjbKUlIvLBjTNIJDcrGcn2_F79DeTMM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/public/shipping-addresses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"shipping-addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get public order by user is",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImNvbnN1bWVyIiwiaWF0IjoxNzM0MzI5MzAwLCJleHAiOjE3MzQzMzI5MDB9.p73J6q3Scvx1dgYfDTWXf11TFxGZ0WZ3Nm8AALkZ-gM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/public/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create public order by user id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImNvbnN1bWVyIiwiaWF0IjoxNzM0MzU2MjA4LCJleHAiOjE3MzQzNTk4MDh9.rfbLTAfbPjv01kdXnYvBKb8EEsvwF27QTG3zj0LdHEc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"shippingAddressId\": 1,  // Replace with a valid shipping address ID\r\n    \"productId\": 1,          // Replace with a valid product ID\r\n    \"quantity\": 2,           // Specify the quantity of the product\r\n    \"paymentType\": \"paid\"    // Specify the payment type (e.g., \"paid\" or \"cod\")\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/public/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create public wishlist by user id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImNvbnN1bWVyIiwiaWF0IjoxNzM0MzMxMDQ5LCJleHAiOjE3MzQzMzQ2NDl9.wbY7N9nRTQjPm-RIWRzqYguo0x7O1zjl_0c3VZtSj7g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": 1  // Replace with a valid product ID\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/public/wishlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"wishlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get public wishlist by userid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImNvbnN1bWVyIiwiaWF0IjoxNzM0MzMxMDQ5LCJleHAiOjE3MzQzMzQ2NDl9.wbY7N9nRTQjPm-RIWRzqYguo0x7O1zjl_0c3VZtSj7g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/public/wishlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"public",
+						"wishlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/orders/test-auth",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM0MzM0NzYxLCJleHAiOjE3MzQzMzgzNjF9.Yo-XedrDCi5b-24fAOcfbp13B73UYL26S6RA56f68II",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/orders/test-auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"orders",
+						"test-auth"
 					]
 				}
 			},

@@ -35,12 +35,12 @@ const Search = () => {
         </Form>
       </div>
 
-      <div className="icon-container">
-        <FaChevronLeft className="nav-icon chevron-icon" />
+      <div className="home-icon-container">
+        <FaChevronLeft className="nav-icon home-chevron-icon" />
       </div>
 
-      <div className="icon-container">
-        <FaChevronRight className="nav-icon chevron-icon" />
+      <div className="home-icon-container">
+        <FaChevronRight className="nav-icon home-chevron-icon" />
       </div>
     </div>
   );

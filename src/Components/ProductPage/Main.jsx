@@ -7,11 +7,11 @@ function Main() {
   return (
     <div>
       <div className="main-section">
-      <div className="main-content">
+      <div className="pro-main-content">
         <h1>Immune Protector – Daily <br />Immunity Boost</h1>
         <p>Empower Your Immunity Naturally!</p>
       </div>
-      <div className="main-image">
+      <div className="pro-main-image">
         <img src={bg} alt="bg" />
       </div>
     </div>

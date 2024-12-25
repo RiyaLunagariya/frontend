@@ -19,60 +19,93 @@ import Nature from './Components/HomePage/Nature';
 import Wellness from "./Components/HomePage/Wellness";
 import Supplements from './Components/HomePage/Supplements';
 import Selling from './Components/HomePage/Selling';
-
+import CartPage from "./Components/CartPage/Cart";
+import { CartProvider } from './Components/CartPage/CartContext';
+import Checkout from './Components/CartPage/Checkout';
+import AccountPage from "./Components/ProfilePage/Account";
+import ProductDetailsPage from './Components/ProductinnerPage/Detail';  // Import the ProductDetailsPage
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Navbar />
+    <CartProvider>
+      <div className="App">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/account" element={<AccountPage />} />
+            {/* Other routes */}
+            <Route path="/product/:id" element={<ProductDetailsPage />} /> {/* Add this route */}
+          </Routes>
+          
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home />
+                  <Search />
+                  <Category />
+                  <ImmunitySection />
+                  <Nature />
+                  <Wellness />
+                  <Selling />
+                  <Supplements />
+                  <Testimonials />
+                </>
+              }
+            />
 
-        <Routes>
-          <Route
-            path="/home"
-            element={
-              <>
-                <Home />
-                <Search />
-                <Category />
-                <ImmunitySection />
-                <Nature />
-                <Wellness />
-                <Selling />
-                <Supplements />
-                <Testimonials />
-              </>
-            }
-          />
-          <Route
-            path="/products"
-            element={
-              <>
-                <Main />
-                <Productgrid />
-              </>
-            }
-          />
+            {/* Home Page Route */}
+            <Route
+              path="/home"
+              element={
+                <>
+                  <Home />
+                  <Search />
+                  <Category />
+                  <ImmunitySection />
+                  <Nature />
+                  <Wellness />
+                  <Selling />
+                  <Supplements />
+                  <Testimonials />
+                </>
+              }
+            />
+            {/* Products Page Route */}
+            <Route
+              path="/products"
+              element={
+                <>
+                  <Main />
+                  <Productgrid />
+                </>
+              }
+            />
+            {/* About Us Page Route */}
+            <Route
+              path="/about-us"
+              element={
+                <>
+                  <About />
+                  <Features />
+                  <Protector />
+                  <Faq />
+                  <Testimonials />
+                </>
+              }
+            />
+            {/* Contact Page Route */}
+            <Route path="/contact" element={<Contact />} />
 
-          <Route
-            path="/about-us"
-            element={
-              <>
-                <About />
-                <Features />
-                <Protector />
-                <Faq />
-                <Testimonials />
-              </>
-            }
-          />
-
-          <Route path="/contact" element={<Contact />} />
-
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+            {/* Cart Page Route */}
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
+    </CartProvider>
   );
 }
 

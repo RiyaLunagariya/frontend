@@ -1,0 +1,115 @@
+.msg {
+  padding: 7% 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #234D8B;
+}
+
+.empty{
+  font-size: 40px;
+  text-align: center;
+}
+
+.empty Button{
+  background: #234D8B;
+  font-size: 20px;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item img {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.item-details h5 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.item-details .price {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 700;
+  color: #000000;
+}
+
+.item-details .mrp {
+  font-size: 14px;
+  color: #00000080;
+  margin-left: 10px;
+}
+
+.underline{
+  color: #00000080;
+  text-decoration: 1px underline;
+  text-underline-offset: 10px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.quantity-controls .quantity {
+  font-size: 20px;
+  font-weight: 700;
+  color: #234D8B;
+}
+
+.quantity-icon {
+  font-size: 25px;
+  color: #234D8B;
+  cursor: pointer;
+}
+
+.quantity-icon:hover {
+  color: #0056b3;
+}
+
+.delete-icon {
+  text-align: right;
+}
+
+.delete-icon svg {
+  font-size: 22px;
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.delete-icon svg:hover {
+  color: #c82333;
+}
+
+.order{
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.checkout{
+  text-align: center;
+}
+.checkout Button{
+  background: #234D8B;
+  font-size: 20px;
+}

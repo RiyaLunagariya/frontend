@@ -7,7 +7,6 @@ import user from "../Images/solar_user-linear.png";
 import cart from "../Images/mynaui_cart.png";
 
 function NavbarComponent() {
-  
   const url = window.location.pathname 
   const [activeLink, setActiveLink] = useState(url); 
 
@@ -30,19 +29,21 @@ function NavbarComponent() {
           <Nav className="ms-auto nav-links">
           <Nav.Link as={Link} to="/home" className={`${activeLink === "/home" ? 'active-navbar-link' : ''}`} onClick={()=> setActiveLink('home')}>Home</Nav.Link> 
           <Nav.Link as={Link} to="/products" className={`${activeLink === "/product" ? 'active-navbar-link' : ''}`} onClick={()=> setActiveLink('product')}>Products</Nav.Link>
-          <Nav.Link as={Link} to="/ingredients" className={`${activeLink === "/ingredients" ? 'active-navbar-link' : ''}`} onClick={()=> setActiveLink('ingredients')}>Ingredients</Nav.Link>
-          <Nav.Link as={Link} to="/about" className={`${activeLink === "/about" ? 'active-navbar-link' : ''}`} onClick={()=> setActiveLink('about')}>How It Works</Nav.Link>
           <Nav.Link as={Link} to="/about-us" className={`${activeLink === "/about-us" ? 'active-navbar-link' : ''}`} onClick={()=> setActiveLink('about-us')}>About Us</Nav.Link>
           <Nav.Link as={Link} to="/contact" className={`${activeLink === "/contact" ? 'active-navbar-link' : ''}`} onClick={()=> setActiveLink('contact')}>Contact</Nav.Link>
           </Nav>
           {/* User and Cart Icons */}
           <div className="icon">
             <div className="user">
+            <Link to="/account">
               <img src={user} alt="user" height="30" />
+              </Link>
             </div>
             <div className="cart">
+            <Link to="/cart">
               <img src={cart} alt="cart" height="30" />
-            </div>
+            </Link>
+          </div>
           </div>
         </Navbar.Collapse>
      

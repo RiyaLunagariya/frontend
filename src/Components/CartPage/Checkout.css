@@ -1,0 +1,156 @@
+.checkout-container {
+  padding: 10% 15px 0;
+  font-family: Arial, sans-serif;
+}
+
+.display {
+  display: flex;
+  gap: 30px;
+}
+
+.check-order-summary {
+  border: 1px solid #234D8B;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.total{
+  color: #000000;
+  font-weight: 700;
+}
+
+.product-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.check-product-image {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.check-mrp {
+  font-size: 14px;
+  color: #00000080;
+  margin-left: 10px;
+}
+
+.product-summary h4 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.product-summary .price {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product-summary .mrp {
+  font-size: 14px;
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.check{
+  display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.login{
+  background: none;
+  border: none;
+  color: #234D8B;
+  text-decoration: underline;
+}
+
+.pricing-details {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.pricing-details p,
+.pricing-details h6 {
+  display: flex;
+  justify-content: space-between;
+}
+.ship{
+  color: #A5A5A5;
+}
+.high{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pricing-details .tax-included {
+  font-size: 14px;
+  color: #A5A5A5;
+}
+
+.contact-and-payment h4 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.cod-button {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.pay-now-button {
+  width: 100%;
+  background-color: #234D8B;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #FFFFFF;
+  padding: 10px 0;
+}
+
+.cod-button{
+  border: 1px solid #234D8B;
+  background: #F0F5FF;
+  color: #000000;
+}
+.cod-button:hover{
+  background: #234D8B;
+}
+
+
+/* Style all input, select, and textarea fields */
+.checkout-container input,
+.checkout-container textarea,
+.checkout-container select {
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+}
+
+
+.checkout-container input::placeholder,
+.checkout-container textarea::placeholder,
+.checkout-container input[type="text"]::placeholder,
+.checkout-container input[type="email"]::placeholder {
+  color: #707070; 
+}
+
+
+
+
+

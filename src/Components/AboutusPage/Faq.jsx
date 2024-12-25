@@ -39,7 +39,7 @@ function Faq() {
           {/* Left Side: FAQ Section */}
           <Col lg={6} md={12}>
             <Button className="faq-button mb-3">FAQS</Button>
-            <h2 className="faq-section-title mb-4">Why Choose Us?</h2>
+            <div className="faq-section-title mb-4">Why Choose Us?</div>
             <Accordion>
               {faqData.map((faq, index) => (
                 <Accordion.Item eventKey={index.toString()} key={index}>
@@ -52,11 +52,11 @@ function Faq() {
 
           {/* Right Side: Product Image */}
           <Col lg={6} md={12} className="d-flex justify-content-center">
-            <div className="product-image-container">
+            <div className="faq-product-image-container">
               <img
                 src={orange}
                 alt="Immune Booster"
-                className="product-image"
+                className="faq-product-image"
               />
             </div>
           </Col>
